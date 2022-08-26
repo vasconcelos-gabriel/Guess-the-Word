@@ -9,8 +9,7 @@
 
  body{
     font-family: Poppins;
-    background: linear-gradient(to right, #1bd6ff, #3b9dff);
-    color: white;
+    background: rgb(53, 53, 54)
  }
 
  button {
@@ -52,7 +51,12 @@ button:hover {
   transform: translateY(-2px);
 }
 
-.button-29:active {
+button:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+
+.teste span{ 
+  color: green;
 }

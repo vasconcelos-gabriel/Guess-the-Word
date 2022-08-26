@@ -1,32 +1,110 @@
+.game{
+  margin-top: 5em;
+}
+
 .game h1 {
   font-size: 2.5em;
+  color: white;
 }
 
 .points span {
   font-weight: bold;
+  color: white;
 }
-
+.tip{
+  color: white;
+}
 .tip span {
   color: gold;
+}
+
+p{
+  color: white;
 }
 
 .wordContainer {
   margin: 1.5em;
   padding: 1.5em;
-  border: 20px solid #0b24e0;
   display: flex;
+  border-radius: 0.5em;
+  
 }
 
-.letter, .blankSquare {
+.letter{
+  box-sizing: border-box;
   font-size: 70px;
   line-height: 1.5;
-  border: 3px solid black;
-  height: 100px;
-  width: 100px;
   text-transform: uppercase;
   background-color: white;
-  color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+
+  width: 100px;
+  height: 100px;
+  left: 1000px;
+  top: 160px;
+
   font-weight: bold;
+
+  background: linear-gradient(135deg, #02C39A 0%, #189D7C 100%),
+  linear-gradient(135deg, #189D7C 0%, #02C39A 100%);
+  
+
+  border: double 6px transparent;
+
+  border: 6px solid;
+
+  border-image-source: linear-gradient(135deg, #02C39A 0%, #189D7C 100%);
+  
+  
+
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  border-radius: 30px;
+  margin-right: 8px;
+}
+
+.blankSquare {
+  box-sizing: border-box;
+  font-size: 70px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  background-color: white;
+  color: rgba(163, 163, 174, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+
+  width: 100px;
+  height: 100px;
+  left: 1000px;
+  top: 160px;
+
+  font-weight: bold;
+
+  background: linear-gradient(135deg, #2d3047 0%, #48495f 100%),
+    linear-gradient(135deg, #48495f 0%, #2d3047 100%);
+
+  border: double 6px transparent;
+
+  border: 6px solid;
+
+  border-image-source: linear-gradient(135deg, #48495f 0%, #2d3047 100%);
+
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  border-radius: 30px;
+  margin-right: 8px;
 }
 
 .letterContainer p {
@@ -45,4 +123,10 @@
   font-size: 2em;
   text-align: center;
   margin-right: 1em;
+  border-radius: 0.2em;
+}
+
+.wrongLettersContainer{
+  margin-top: 1em;
+  color: white;
 }

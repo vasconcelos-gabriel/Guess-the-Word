@@ -30,6 +30,9 @@ function App() {
   const [wrongLetters, setWrongLetters] = useState([])
   const [guesses, setGuesses] = useState(3)
   const [score, setScore] = useState(0)
+ 
+
+
 
   const pickWordAndPickCategory = useCallback(() => {
     // pick a random category
@@ -58,7 +61,7 @@ function App() {
     setPickedWord(word)
     setPickedCategory(category)
     setLetters(wordLetters)
-
+console.log(word);
     setGameStage(stages[1].name)
   }, [pickWordAndPickCategory])
 
@@ -78,7 +81,9 @@ function App() {
       setGuessedLetters(actualGuessedLetters => [
         ...actualGuessedLetters,
         normalizedLetter
+        
       ])
+      
     } else {
       setWrongLetters(actualWrongLetters => [
         ...actualWrongLetters,

@@ -1,3 +1,15 @@
+div{
+  margin-top: 5em;
+}
+
+h1{
+  color: white;
+  margin-bottom: 1em;
+}
+h2{
+  color: white;
+  margin-bottom: 2em;
+}
 h2 span{
   color: gold;
   font-size: 1.5em;
