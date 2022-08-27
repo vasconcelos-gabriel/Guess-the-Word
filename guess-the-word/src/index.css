@@ -9,7 +9,7 @@
 
  body{
     font-family: Poppins;
-    background: rgb(53, 53, 54)
+    background:  #6083a5;
  }
 
  button {
@@ -54,9 +54,4 @@ button:hover {
 button:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
-}
-
-
-.teste span{ 
-  color: green;
 }

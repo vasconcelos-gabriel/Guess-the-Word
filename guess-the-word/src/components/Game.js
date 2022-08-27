@@ -13,14 +13,14 @@ const Game = ({
 }) => {
   const [letter, setLetter] = useState('')
   const letterInputerRef = useRef(null)
-  
-  const handleSubmit = (e) => {
-      e.preventDefault();
 
-      verifyLetter(letter)
-      setLetter("")
+  const handleSubmit = e => {
+    e.preventDefault()
 
-      letterInputerRef.current.focus();
+    verifyLetter(letter)
+    setLetter('')
+
+    letterInputerRef.current.focus()
   }
 
   return (
@@ -60,9 +60,13 @@ const Game = ({
         </form>
       </div>
       <div className="wrongLettersContainer">
-        {wrongLetters.map((letter, i) => (
-          <span key={i}>{letter}, </span>
-        ))}
+        <span>
+        
+          Letras já utilizadas:
+          {wrongLetters.map((letter, i) => (
+            <span key={i}> {letter}, </span>
+          ))}
+        </span>
       </div>
     </div>
   )

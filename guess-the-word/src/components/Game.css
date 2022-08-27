@@ -1,5 +1,5 @@
 .game{
-  margin-top: 5em;
+  margin-top: 1em;
 }
 
 .game h1 {
@@ -68,6 +68,16 @@ p{
 
   border-radius: 30px;
   margin-right: 8px;
+
+
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.053),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.077),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.095),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.113),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.137),
+  100px 100px 80px rgba(0, 0, 0, 0.19)
+;
 }
 
 .blankSquare {
@@ -91,20 +101,33 @@ p{
 
   font-weight: bold;
 
-  background: linear-gradient(135deg, #2d3047 0%, #48495f 100%),
-    linear-gradient(135deg, #48495f 0%, #2d3047 100%);
+  background: linear-gradient(135deg, #76A9DA 0%, #85C0F9 100%),
+  linear-gradient(135deg, #85C0F9 0%, #76A9DA 100%);
+  
 
   border: double 6px transparent;
 
   border: 6px solid;
 
-  border-image-source: linear-gradient(135deg, #48495f 0%, #2d3047 100%);
+  border-image-source: linear-gradient(135deg, #85C0F9 0%, #76A9DA 100%);
+  
+  
 
   background-origin: border-box;
   background-clip: content-box, border-box;
 
   border-radius: 30px;
   margin-right: 8px;
+
+
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.053),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.077),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.095),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.113),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.137),
+  100px 100px 80px rgba(0, 0, 0, 0.19)
+;
 }
 
 .letterContainer p {
