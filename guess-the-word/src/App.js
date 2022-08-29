@@ -11,6 +11,7 @@ import { wordsList } from './data/words'
 import StartScreen from './components/StartScreen'
 import Game from './components/Game'
 import GameOver from './components/GameOver'
+import Win from './components/Win'
 
 const stages = [
   { id: 1, name: 'start' },
@@ -98,6 +99,9 @@ console.log(word);
     setWrongLetters([])
   }
 
+  const parabens = () => {
+    {<Win />}
+  }
   //check if guesses ended
   useEffect(() => {
     if (guesses <= 0) {
@@ -115,9 +119,9 @@ console.log(word);
     if (guessedLetters.length === uniqueLetters.length) {
       // add score
       setScore(actualScore => (actualScore += 100))
-
-      // restart game with new word
-      startGame()
+      parabens()
+      /* // restart game with new word
+      startGame() */
     }
   }, [guessedLetters, letters, startGame])
 
@@ -143,6 +147,7 @@ console.log(word);
           guesses={guesses}
           score={score}
         />
+        
       )}
       {gameStage === 'end' && <GameOver retry={retry} score={score} />}
     </div>

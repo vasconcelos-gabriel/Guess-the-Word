@@ -1,7 +1,27 @@
+.gameover{
+  margin-top: 5em;
+  background-color: #111;
+  border-radius:  10px;
+  padding: 3rem;
 
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.053),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.077),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.095),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.113),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.137),
+  100px 100px 80px rgba(0, 0, 0, 0.19)
+;
+}
 
 h1{
-  color: white;
+  font-size: 4em;
+  color: #fa5252;
+  background-image: -webkit-linear-gradient(90deg, #fa5252 0%, #dd2476 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 h2{
   color: white;

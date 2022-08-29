@@ -1,10 +1,26 @@
 .game{
-  margin-top: 1em;
+  margin-top: 5em;
+  background-color: #111;
+  border-radius:  10px;
+  padding: 3rem;
+
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.053),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.077),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.095),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.113),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.137),
+  100px 100px 80px rgba(0, 0, 0, 0.19)
+;
 }
 
 .game h1 {
-  font-size: 2.5em;
-  color: white;
+  font-size: 4em;
+  color: #fa5252;
+  background-image: -webkit-linear-gradient(90deg, #fa5252 0%, #dd2476 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .points span {
@@ -16,6 +32,7 @@
 }
 .tip span {
   color: gold;
+  text-transform: uppercase;
 }
 
 p{
@@ -26,7 +43,9 @@ p{
   margin: 1.5em;
   padding: 1.5em;
   display: flex;
-  border-radius: 0.5em;
+  border-radius: 10px;
+  border: 10px solid rgba(221,36,118,1);
+ 
   
 }
 
@@ -66,7 +85,7 @@ p{
   background-origin: border-box;
   background-clip: content-box, border-box;
 
-  border-radius: 30px;
+  border-radius: 10px;
   margin-right: 8px;
 
 
@@ -91,7 +110,7 @@ p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+  padding: npone;
   gap: 10px;
 
   width: 100px;
@@ -101,32 +120,36 @@ p{
 
   font-weight: bold;
 
-  background: linear-gradient(135deg, #76A9DA 0%, #85C0F9 100%),
-  linear-gradient(135deg, #85C0F9 0%, #76A9DA 100%);
+  background: linear-gradient(135deg, #CED5DB 0%, #E7EFF6 100%),
+  linear-gradient(135deg, #E7EFF6 0%, #CED5DB 100%);
+  
   
 
   border: double 6px transparent;
 
   border: 6px solid;
 
-  border-image-source: linear-gradient(135deg, #85C0F9 0%, #76A9DA 100%);
+
+border-image-source: linear-gradient(135deg, #E7EFF6 0%, #CED5DB 100%);
+
+
   
   
 
   background-origin: border-box;
   background-clip: content-box, border-box;
 
-  border-radius: 30px;
+  border-radius: 10px;
   margin-right: 8px;
 
 
-  box-shadow:
-  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.053),
-  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.077),
-  12.5px 12.5px 10px rgba(0, 0, 0, 0.095),
-  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.113),
-  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.137),
-  100px 100px 80px rgba(0, 0, 0, 0.19)
+box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
 ;
 }
 

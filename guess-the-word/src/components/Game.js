@@ -25,10 +25,7 @@ const Game = ({
 
   return (
     <div className="game">
-      <p className="points">
-        <span>Pontuação: {score}</span>
-      </p>
-      <h1>Adivinhe a palavra</h1>
+      <h1>GUESS THE WORD</h1>
       <h3 className="tip">
         Dica sobre a palavra: <span>{pickedCategory}</span>
       </h3>
@@ -45,7 +42,7 @@ const Game = ({
         )}
       </div>
       <div className="letterContainer">
-        <p>Tente adivinhar uma letra da palavra: </p>
+        <p>INSIRA UMA LETRA ABAIXO: </p>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -56,7 +53,7 @@ const Game = ({
             value={letter}
             ref={letterInputerRef}
           />
-          <button>JOGAR</button>
+          <button>ENVIAR LETRA</button>
         </form>
       </div>
       <div className="wrongLettersContainer">
