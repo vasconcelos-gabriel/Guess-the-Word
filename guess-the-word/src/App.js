@@ -16,6 +16,7 @@ import Win from './components/Win'
 const stages = [
   { id: 1, name: 'start' },
   { id: 2, name: 'game' },
+  { id: 3, name: 'win' },
   { id: 4, name: 'end' }
 ]
 
@@ -31,9 +32,6 @@ function App() {
   const [wrongLetters, setWrongLetters] = useState([])
   const [guesses, setGuesses] = useState(3)
   const [score, setScore] = useState(0)
- 
-
-
 
   const pickWordAndPickCategory = useCallback(() => {
     // pick a random category
@@ -62,9 +60,11 @@ function App() {
     setPickedWord(word)
     setPickedCategory(category)
     setLetters(wordLetters)
-console.log(word);
+    console.log(word)
     setGameStage(stages[1].name)
   }, [pickWordAndPickCategory])
+
+  
 
   // process the letter input
   const verifyLetter = letter => {
@@ -82,9 +82,7 @@ console.log(word);
       setGuessedLetters(actualGuessedLetters => [
         ...actualGuessedLetters,
         normalizedLetter
-        
       ])
-      
     } else {
       setWrongLetters(actualWrongLetters => [
         ...actualWrongLetters,
@@ -99,15 +97,12 @@ console.log(word);
     setWrongLetters([])
   }
 
-  const parabens = () => {
-    {<Win />}
-  }
   //check if guesses ended
   useEffect(() => {
     if (guesses <= 0) {
       //reset all states
       clearLetterStates()
-      setGameStage(stages[2].name)
+      setGameStage(stages[3].name)
     }
   }, [guesses])
 
@@ -116,14 +111,15 @@ console.log(word);
     const uniqueLetters = [...new Set(letters)]
 
     // win condition
-    if (guessedLetters.length === uniqueLetters.length) {
+    if (guessedLetters.length === uniqueLetters.length && gameStage === stages[1].name) {
       // add score
       setScore(actualScore => (actualScore += 100))
-      parabens()
+
       /* // restart game with new word
       startGame() */
+      setGameStage(stages[2].name)
     }
-  }, [guessedLetters, letters, startGame])
+  }, [guessedLetters, letters, gameStage, startGame])
 
   // restarts game
   const retry = () => {
@@ -131,6 +127,11 @@ console.log(word);
     setGuesses(3)
 
     setGameStage(stages[0].name)
+  }
+
+  const continueGame = () =>{
+    setGuesses(3)
+    startGame()
   }
 
   return (
@@ -147,9 +148,17 @@ console.log(word);
           guesses={guesses}
           score={score}
         />
-        
       )}
-      {gameStage === 'end' && <GameOver retry={retry} score={score} />}
+      {gameStage === 'win' && (<Win letters={letters} pickedWord={pickedWord} continueGame={continueGame}/>)}
+      {gameStage === 'end' && (
+        <GameOver
+          retry={retry}
+          score={score}
+          pickedWord={pickedWord}
+          letters={letters}
+          guessedLetters={guessedLetters}
+        />
+      )}
     </div>
   )
 }

@@ -1,8 +1,8 @@
 export const wordsList = {
-  carro: ['HondaCivic', 'Ferrari', 'Porsche', 'Gol', 'Corolla'],
-  fruta: ['Banana', 'Maçã', 'Pêra', 'Mamão', 'Laranja'],
-  corpo: ['Braço', 'Perna', 'Cérebro', 'Pescoço', 'Olhos'],
+  carro: ['HondaCivic', 'Ferrari', 'Porsche', 'Corsa', 'Corolla'],
+  fruta: ['Banana', 'Maça', 'Pera', 'Mamao', 'Laranja'],
+  corpo: ['Braço', 'Perna', 'Cerebro', 'Pescoço', 'Olhos'],
   computador: ['Mouse', 'Teclado', 'Monitor', 'Gabinete'],
   programação: ['Linguagem', 'Framework', 'JavaScript', 'React'],
-  alimento: ['Arroz', 'Feijão', 'Carne', 'Leite', 'Ovo']
+  alimento: ['Arroz', 'Feijao', 'Carne', 'Leite', 'Biscoito']
 }

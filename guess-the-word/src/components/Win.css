@@ -1,4 +1,4 @@
-.game{
+.win{
   margin-top: 5em;
   background-color: #111;
   border-radius:  10px;
@@ -14,7 +14,7 @@
 ;
 }
 
-.game h1 {
+.win h1 {
   font-size: 4em;
   color: #fa5252;
   background-image: -webkit-linear-gradient(90deg, #fa5252 0%, #dd2476 90%);
@@ -23,20 +23,13 @@
   -webkit-text-fill-color: transparent;
 }
 
-.points span {
-  font-weight: bold;
+.win h1{
   color: white;
-}
-.tip{
-  color: white;
-}
-.tip span {
-  color: gold;
-  text-transform: uppercase;
 }
 
-p{
+.win p{
   color: white;
+  margin-bottom: 1em;
 }
 
 .wordContainer {
@@ -45,10 +38,8 @@ p{
   display: flex;
   border-radius: 10px;
   border: 10px solid rgba(221,36,118,1);
-}
-
-.letras{
-  text-transform: uppercase;
+ 
+  
 }
 
 .letter{
@@ -99,82 +90,4 @@ p{
   41.8px 41.8px 33.4px rgba(0, 0, 0, 0.137),
   100px 100px 80px rgba(0, 0, 0, 0.19)
 ;
-}
-
-.blankSquare {
-  box-sizing: border-box;
-  font-size: 70px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  background-color: white;
-  color: rgba(163, 163, 174, 1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: npone;
-  gap: 10px;
-
-  width: 100px;
-  height: 100px;
-  left: 1000px;
-  top: 160px;
-
-  font-weight: bold;
-
-  background: linear-gradient(135deg, #CED5DB 0%, #E7EFF6 100%),
-  linear-gradient(135deg, #E7EFF6 0%, #CED5DB 100%);
-  
-  
-
-  border: double 6px transparent;
-
-  border: 6px solid;
-
-
-border-image-source: linear-gradient(135deg, #E7EFF6 0%, #CED5DB 100%);
-
-
-  
-  
-
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-
-  border-radius: 10px;
-  margin-right: 8px;
-
-
-box-shadow:
-  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  100px 100px 80px rgba(0, 0, 0, 0.07)
-;
-}
-
-.letterContainer p {
-  margin-bottom: 1.2em;
-}
-
-.letterContainer form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.letterContainer input {
-  height: 50px;
-  width: 50px;
-  font-size: 2em;
-  text-align: center;
-  margin-right: 1em;
-  border-radius: 0.2em;
-}
-
-.wrongLettersContainer{
-  margin-top: 1em;
-  color: white;
 }
